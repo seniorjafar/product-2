@@ -1,0 +1,27 @@
+.model__owerley {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #0005;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.detail {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  z-index: 101;
+  animation: detailAnimate 0.3s ease-in-out 0s forwards;
+}
+
+@keyframes detailAnimate {
+  to {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
